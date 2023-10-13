@@ -1,0 +1,31 @@
+{
+  "products": [
+    {
+      "productid": " 1",
+      "productname": " Iphone",
+      "brand": " Apple",
+      "price": " 563578",
+      "description": " Apple iphone",
+      "thumbnail": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-7inch-naturaltitanium?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1692845702708",
+      "id": 5
+    },
+    {
+      "productid": "2",
+      "productname": "phone",
+      "brand": "Apple",
+      "price": "450000",
+      "description": "Iphone",
+      "thumbnail": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-finish-select-202309-6-1inch-blue?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1692923777972",
+      "id": 6
+    },
+    {
+      "productid": "3",
+      "productname": "Iphone",
+      "brand": "Apple",
+      "price": "878000",
+      "description": "Iphone",
+      "thumbnail": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-7inch-naturaltitanium?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1692845702708",
+      "id": 7
+    }
+  ]
+}
