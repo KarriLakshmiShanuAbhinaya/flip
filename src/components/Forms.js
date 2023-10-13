@@ -1,6 +1,7 @@
 import React, { useState,useEffect } from 'react'
 import axios from 'axios'
 export default function Form() {
+    const[products,setProducts]=useState([{}]);
     const [id,setId]=useState(' ')
     const [name,setName]=useState(' ')
     const [brand,setBrand]=useState(' ')
@@ -16,8 +17,12 @@ export default function Form() {
         description:des,
         thumbnail:img
     }
+    useEffect(()=>{
+        axios.get(' http://localhost:3002/products')
+        .then(res=>setProducts(res.data))
+    },0)
     let sno=1;
-    const[products,setProducts]=useState([{}]);
+ 
     const fetchData=()=>{
             axios.get('http://localhost:3002/products')
             .then(res=>setProducts(res.data))
@@ -149,6 +154,30 @@ export default function Form() {
             } 
         </tbody>
     </table>
+    {
+        products.map((element,index)=>{
+            return(
+                <>
+                <div class="card float-start mt-3 ml"  style={{width:"25rem",height:"32rem"}}>
+                <img src={element.thumbnail} style={{width:"25rem",height:"15rem",marginRight:"10px",marginLeft:"-1px"}} class="card-img-top" alt="..."  ></img>
+                <div class="card-body">
+                <h5 class="card-title">{element.productname}</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                <li class="list-group-item">Product-id: {element.productid}</li>
+                <li class="list-group-item">Product-Price: {element.price}</li>
+                <li class="list-group-item">Product-Brand: {element.brand}</li>
+                <li class="list-group-item">Product Description: {element.description}</li>
+            </ul>
+            <div class="card-body">
+            <button class="bg-info"><a href={element.card} class="card-link" style={{textDecoration:"none",color:"black"}}>Card link</a></button>
+            </div>
+            </div>
+                </>
+            )
+
+        })
+    }
    </>
   )
 }
