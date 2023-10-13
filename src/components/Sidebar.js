@@ -4,12 +4,9 @@ function Sidebar(){
     return(
         <>
         <div className='sidebar'>
-            <ul>
                 <div className='col-md-2'>
-                <Link to="Products"><li><i class="fa-solid fa-house"></i>Products</li></Link>
-                <Link to="Forms"><li><i class="fa-solid fa-house"></i>Forms</li></Link>
+                <button className='bhi mt-3'><Link to="Forms" style={{textDecoration:"none",color:"black"}}>Forms</Link></button>
                 </div>
-            </ul>
         </div>
         
     </>

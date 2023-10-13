@@ -86,7 +86,7 @@ export default function Form() {
     }
   return (
    <>
-           <div className="container-fluid">
+           <div className="container-fluid mt-5">
             <div className="row justify-content-center">
                 <div className="col-md-6" style={{backgroundColor:"#abc3ee"}}>
                     <form method="post" onSubmit={handleSubmit}>
@@ -173,7 +173,9 @@ export default function Form() {
             <button class="bg-info"><a href={element.card} class="card-link" style={{textDecoration:"none",color:"black"}}>Card link</a></button>
             </div>
             </div>
+            
                 </>
+                
             )
 
         })

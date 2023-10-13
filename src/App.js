@@ -22,25 +22,26 @@ function App() {
           <div className='row'>
           <div className='col-md-12'>
             <Searchbar/>
-            <div className='dmydiv'>
+      <div className='dmydiv'>
             <Topbar/>
             </div>
             <div className='dmydix'>
             <Banner />
             </div>
 
-            {/* <div className='row dmydic'>
-            <Products />
-           </div> */}
-           <div style={{color:"blue",display:"block"}} className='mt-5 mb-5'>
-           <Forms/>
-            </div>
+           
+            <Routes>
+               <Route path='/Forms' element={<Forms/>}/>
+          </Routes>
             {/* <div className='row dmydic'>
             <Products2 />
            </div> */}
+            <div className='row dmydic' style={{display:"block"}}>
+            <Products />
            </div>
            </div>
-          </div>
+           </div>
+           </div>
           </store.Provider>
         </BrowserRouter>
     </>

@@ -1,5 +1,6 @@
 import React from 'react'
 import logo2 from '../images/image1.jpg'
+import { Link } from 'react-router-dom';
 function Searchbar(props) {
     return (
       <>
@@ -17,7 +18,7 @@ function Searchbar(props) {
               <button className='create float-end'><i class="fa-solid fa-ellipsis-vertical"></i></button>
               <button className='create float-end'><i class="fa-solid fa-cart-shopping"></i><p className='sai'>Cart</p></button>
               <button className='create float-end'><i class="fa-regular fa-user"></i><p className='sai'>Abhinaya</p><i class="fa-solid fa-chevron-down"></i></button>
-              <button className='create float-end'><i class="fa-solid fa-shop"></i><p className='sai'> Become a Seller</p></button>
+              <button className='create float-end'><i class="fa-solid fa-shop"></i><Link to="Forms" style={{textDecoration:"none",color:"black",fontSize:"19px",fontFamily:"'Times New Roman', Times, serif"}}> Become a seller</Link></button>
   
               </div>
   </div>
