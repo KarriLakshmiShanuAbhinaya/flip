@@ -145,7 +145,7 @@ export default function Form() {
                             <td>{e.brand}</td>
                             <td>{e.price}</td>
                             <td>{e.description}</td>
-                            <td><img src={e.thumbnail}  style={{width:"15rem",height:"10rem"}} className="card-img-top pl" alt="..."/></td>
+                            <td><img src={e.thumbnail}  style={{width:"17rem",height:"10rem"}} className="card-img-top pl" alt="..."/></td>
                             <td><button onClick={()=>handleEdit(e)}><i id="actions1" i class="fa-solid fa-pen-to-square abhi"></i> </button><button onClick={()=>handleDelete(e.id)}><i id="actions2" class="fa-solid fa-trash-can"></i></button></td>
                         </tr>
                         </>
