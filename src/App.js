@@ -6,7 +6,7 @@ import Sidebar from './components/Sidebar';
 import Searchbar from './components/Searchbar';
 import Topbar from './components/Topbar';
 import Banner from './components/Banner';
-import Forms from './components/Forms';
+import BecomeaSeller from './components/BecomeaSeller';
 import Products2 from './components/Products2';
 import Users from './components/Users'
 import { createContext, useState } from 'react';
@@ -31,7 +31,7 @@ function App() {
 
            
             <Routes>
-               <Route path='/Forms' element={<Forms/>}/>
+               <Route path='/BecomeaSeller' element={<BecomeaSeller/>}/>
           </Routes>
             {/* <div className='row dmydic'>
             <Products2 />

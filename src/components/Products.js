@@ -15,7 +15,7 @@ export default function Products() {
             return(
                 <>
                 <div class="card float-start mt-3 ml"  style={{width:"25rem",height:"32rem"}}>
-  <img src={element.thumbnail} style={{width:"25rem",height:"15rem",marginRight:"29px",marginLeft:"-12px"}} class="card-img-top" alt="..."  ></img>
+  <img src={element.thumbnail} style={{width:"25rem",height:"14rem",marginRight:"29px",marginLeft:"-12px"}} class="card-img-top" alt="..."  ></img>
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
   </div>

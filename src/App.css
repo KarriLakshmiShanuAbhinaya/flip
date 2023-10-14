@@ -39,6 +39,7 @@
 body{
   background:rgb(244, 238, 238) !important;
   color:black !important;
+  display:fixed !important;
 } 
 
 .lab{
